@@ -1,0 +1,189 @@
+NAME: Atisha Shaurya
+Emp I'd: 1712
+
+
+
+
+
+1. what are monolithic and micro architecture?
+
+Monolithic architecture  is built as one large system and is usually one code-base. Monolithic application is tightly coupled and entangled as the application evolves, making it difficult to isolate services for purposes such as independent scaling or code maintainability.
+
+It extremely difficult to change technology or language or framework because everything is tightly coupled and depend on each other.
+
+Microservices architecture is built as small independent module based on business functionality. In microservices application, each project and services are independent from each other at the code level. Therefore it is easy to  configure and deploy completely and also easy to scale based on demand.
+
+
+2. what are spirits?
+
+sprint is a set period of time during which specific work has to be completed and made ready for review.Each sprint begins with a planning meeting
+
+3. difference between agile and DevOps? 
+
+Agile	DevOps Agile refers to an iterative approach which focuses on collaboration, customer feedback, and small, rapid releases.	DevOps is considered a practice of bringing development and operations teams together.
+Purpose  =	Agile helps to manage complex projects.	DevOps central concept is to manage end-to-end engineering processes.
+Task =	Agile process focusses on constant changes.	DevOps focuses on constant testing and delivery.
+
+
+[DAY1 TO DAY4]
+
+
+1. what are the Features of kernel?
+
+A core feature of any operating system, the kernel manages communication between hardware and software. The kernel is responsible for managing memory, and I/O to memory, cache, the hard drive, and other devices. It also handles device signals, task scheduling, and other essential duties.
+
+2. difference between linux and windows operating system?
+
+	Linux                                          	                                   Windows
+a.	Linux is a open source operating system.	                       While windows are the not the open source operating system.
+b.	Linux is free of cost.	                                              While it is costly.
+c.	It’s file name case-sensitive.	                               While it’s file name is case-insensitive.
+d.	In linux, monolithic kernel is used.	                               While in this, micro kernel is used.
+e.	Linux is more efficient in comparison of windows.	                While windows are less efficient.
+f.	There is forward slash is used for Separating the directories.	While there is back slash is used for Separating the directories.
+g.	Linux provides more security than windows.	                        While it provides less security than linux.
+
+
+3.What do you mean by opensource?
+
+ Open source software is code that is designed to be publicly accessible—anyone can see, modify.
+ 
+
+4. Explain the output of "ls -l" command
+ 
+ It give the list of the following directory.
+ 
+ How to create multipple files with single command?
+ 
+ touch file1 file2 file3
+ 
+
+5. Where are unit files located?
+ 
+ /usr/lib/systemd
+
+ 
+ 6. What are an absolute path and relative path?
+  An absolute path refers to the complete details needed to locate a file or folder, starting from the root element and ending with the other subdirectories.
+  Relative Path is the hierarchical path that locates a file or folder on a file system starting from the current directory. 
+
+ 
+ 7.What are hard links and soft links?
+ 
+ Hard link are just like copy of that file with same Inodes .
+ the most useful application for hard links is to allow files, programs and scripts (i.e. short programs) to be easily accessed in a different directory from the original file or executable file.
+ A symlink (also called a symbolic link) is a type of file in Linux that points to another file or a folder on your computer. Symlinks are similar to shortcuts in Windows. Some people call symlinks "soft links" – a type of link in Linux/UNIX systems – as opposed to "hard links."
+
+ 
+ 8.After ll command what is the arrow indicates to and what it is pointing to?
+ 
+ It show the complete detail of files present in that directory . 
+
+ 
+ 9.What does srv contain and why is it empty?
+ 
+ In this service data is stored i.e. if u want to run the web server , you will store the file here .
+
+ 
+10. What does the mnt directory contain?
+ 
+ temporary mount points for mounting storage devices, such as CDROMs, floppy disks and USB , key drives.
+
+
+11. How does cgroup be different from namespace?
+
+cgroups limits the resources which a process or set of processes can use these resources could be CPU,Memory,Network I/O or access to filesystem while namespace restrict the visibility of group of 
+processes to the rest of the system. Cgroups(control groups) does resource management.2
+
+12. In vim how can we search inside the file?
+/search 
+
+
+13 .How to delete files in vim editor?
+
+:!rm filename
+
+
+14. Difference between wq and x? 
+wq = save and exit 
+x = exit without save
+
+
+15.what are hidden files in linux
+
+Hidden files starts with dot (.) . files used in order to execute some scripts or to store configuration about some services on your host.
+
+
+16.How to identify which type of file is this?
+
+ls -lah
+
+
+17. Why lib,lib64 is in a different color?
+
+Files that can be used for various functions
+chang in color may depends upon link, directory, image etc.
+
+
+18. how can you say linux is better than windows?
+
+Linux is generally more secure than Windows. Even though attack vectors are still discovered in Linux, due to its open-source technology, anyone can review the vulnerabilities, which makes the identification and resolving process faster and easier.
+
+
+19. Where is unit file are located?
+ /usr/lib/systemd directory
+
+
+20. By which command we can get the the one line description for the particular command?
+ 
+whatis Command
+whatis is used to display one-line manual page descriptions of the command name (such as fswatch in the command below) you enter as an argument. If the description is too long some parts are trimmed of by default, use the -l flag to show a complete description.
+
+
+21. Difference between flvour and distribution in linux.
+
+Distribution means a certain set of applications that are bundled and pre-configured. The difference in that for Linux distributions (or distros) can range from almost nothing (eg. RHEL vs. CentOS), to a completely different intention, and thus software selection (eg. Slackware vs. Mint)
+
+Different "flavours" are called that because they are based on the same principles (POSIX, Single UNIX Specification), but follow different ways for implementation. For example, while all Unices have a sigaction system call, probably none of them share the same implementation, as the Kernel itself follows different specifications.
+
+ 
+22. What is difference between yum and apt?
+Yum is usually used with the RedHat family OS's and handles RPM software packages while apt is used with the Debian family distributions and handles deb software packages. Both are used to install, remove and update software packages which are downloaded from software repositories.
+
+
+23. What is the difference between iptables and uncomplicated firewall(UFW) in Linux?
+Iptables is a kernel level ip filtering mechanism. It does allow you to make routing decisions and so on on IP packets.
+
+UFW is a simplified firewall mechanism that is implemented on top of iptables. UFW is not as flexible but is easier to configure for common scenarios.
+
+UFW provides a basic default firewall and allows you to easily turn on and off basic services. To use IPtables you need to understand TCP/IP connections, more complicated protocols (e.g. NFS) and it can still be complicated.
+
+While UFW is not capable of some of the things that iptables is it is a much simplified firewall and if it provides the capabilities that you need it is much simpler to configure and easier to have confidence that it is doing what you actually want
+
+
+24.what is apt and apt get?
+ If you are a Linux user comfortable with the command line, apt-get is probably something you use often. You utilize this tool to install, update, list, and remove packages from your system.
+
+apt-get is a command line program used to interact with the APT (Advanced Package Tool) package management system. However, this is just one of the tools used to communicate with the APT system. Along with apt-get, there are also apt-cache, apt-config, and (the newly added) apt.
+APT stands for Advanced Package Tool. It is a set of core tools inside Debian and Ubuntu Linux system. You can use the apt command to install apps, delete or remove apps, keep Ubuntu/Debian server up to date and more. Apt work with dpkg command to install and update the system
+25.APT vs APT-GET: What is the Difference?
+
+There are four main differences between apt and apt-get:
+
+   a. The apt tool merges functionalities of apt-get and apt-cache
+   b. Additional output and improved design
+   c. Changes in command syntax for existing functionalities
+   d. Two new functionalities exclusive to the apt command 
+
+26. what is key fingure prints?
+
+
+The fingerprint of a key is a unique sequence of letters and numbers used to identify the key. Just like the fingerprints of two different people, the fingerprints of two different keys can never be identical. The fingerprint is the best way to identify a particular key.
+
+A key has several properties like the name and email of the key owner, key type, key expiration date and so on. When you are searching for a public key and you find multiple keys with the same properties, the only way to identify the key you are looking for is to compare the fingerprints of the two keys with the fingerprint of the key you require.
+
+It is the fingerprint of a key that is verified when you try to login to a remote computer using SSH. While signing a PGP key, you must always check the key fingerprint and verify the key owner's identity to ensure that you are signing the correct key.
+
+
+
+
